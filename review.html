@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop - Customer Reviews</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="review-submitted">
+
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars" style="background: none !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; width: auto !important; height: auto !important; font-size: 3rem; color: #333; cursor: pointer;"></label>
+    <a href="index.html" class="logo">Flower<span>.</span></a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="products.html">products</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+</header>
+
+<section class="review" id="review">
+    <h1 class="heading"> customer's <span>review</span></h1>
+
+    <!-- Rating Summary Element Block -->
+    <div class="rating-summary">
+        <h2>4.9 / 5.0</h2>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Based on 1,420 happy boutique buyers</p>
+    </div>
+
+    <!-- Main Grid Array for Comments -->
+    <div class="box-container" id="reviews-grid">
+        <!-- Review 1 -->
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>I have ordered flowers from many places, but the quality here is exceptional. The colors were vibrant, the flowers were incredibly fresh, and the arrangement felt elegant and natural.</p>
+            <div class="user">
+                <img src="image/pic-1.jpg" alt="">
+                <div class="user-info">
+                    <h3>John</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>From the moment the flowers arrived, I could see the attention to detail and care that went into every arrangement. The blooms were fresh, fragrant, and absolutely beautiful.</p>
+            <div class="user">
+                <img src="image/pic-1.jpg" alt="">
+                <div class="user-info">
+                    <h3>Emily</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>The flowers were absolutely beautiful and incredibly fresh. Every bloom looked vibrant and carefully selected, creating an arrangement that brought warmth and elegance to the room.</p>
+                        <div class="user">
+                <img src="image/pic-1.jpg" alt="">
+                <div class="user-info">
+                    <h3>Anna</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+</section>
+
+<!-- Pure HTML Feedback Action Area Block -->
+<div class="add-review-section">
+    <h2>share your <span>experience</span></h2>
+    <form action="#review-submitted" method="GET" class="review-form" id="feedback-form">
+        <input type="text" id="form-name" placeholder="Your name" class="form-input" required>
+        <select id="form-stars" class="form-select" required>
+            <option value="5">⭐️⭐️⭐️⭐️⭐️ (5 Stars)</option>
+            <option value="4">⭐⭐⭐⭐ (4 Stars)</option>
+            <option value="3">⭐⭐⭐ (3 Stars)</option>
+            <option value="2">⭐⭐ (2 Stars)</option>
+            <option value="1">⭐ (1 Star)</option>
+        </select>
+        <textarea id="form-text" placeholder="Write your review comments here..." class="form-input" required></textarea>
+        <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">submit review</button>
+        <div class="success-msg">🎉 Thank you! Your review comment statement has been noted by our boutique.</div>
+    </form>
+</div>
+
+<!-- Refined Footer Section -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>Location</h3>
+            <a href="#" class="loc-link"><i class="fas fa-map-marker-alt"></i> Phnom Penh</a>
+            <a href="#" class="loc-link"><i class="fas fa-map-marker-alt"></i> Battambong</a>
+            <a href="#" class="loc-link"><i class="fas fa-map-marker-alt"></i> Kom Pot</a>
+            <a href="#" class="loc-link"><i class="fas fa-map-marker-alt"></i> Siem Reap</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="tel:+85598817826" class="contact-item"><i class="fas fa-phone-alt"></i> +855 98-817-826</a>
+            <a href="mailto:kaykimly1207@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> Kaykimly1207@Gmail.Com</a>
+            <a href="#" class="contact-item"><i class="fas fa-map-marked-alt"></i> Prek Pnov, Phnom Penh</a>
+            
+            <!-- Original payment image banner layout -->
+            <img src="image/payment.png" alt="Payment Methods" style="margin-top: 2rem; max-width: 100%; height: auto; display: block;">
+        </div>
+    </div>
+
+    <div class="credit">Created By <span>Ly Ly</span> | All Rights Reserved</div>
+</section>
+
+</body>
+</html>
+
