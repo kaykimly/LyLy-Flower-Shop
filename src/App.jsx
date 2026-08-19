@@ -31,7 +31,7 @@ function Home() {
 
           <div className="md:w-1/2 w-full flex justify-end">
             <img 
-              src="/image/home-bg.jpg" 
+              src="/home-bg.jpg" 
               alt="LyLy Flower Shop Tulips" 
               className="w-full max-w-xl h-auto rounded-3xl shadow-xl object-cover"
             />
@@ -43,28 +43,28 @@ function Home() {
       {/* 4 Feature Boxes with Local Image Icons */}
       <div className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-4">
-          <img src="/image/icon-1.png" alt="Free Delivery" className="w-12 h-12 object-contain" />
+          <img src="/icon-1.png" alt="Free Delivery" className="w-12 h-12 object-contain" />
           <div>
             <h4 className="font-bold text-gray-900 text-sm">Free Delivery</h4>
             <p className="text-gray-500 text-xs">On All Orders</p>
           </div>
         </div>
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-4">
-          <img src="/image/icon-2.png" alt="10 Days Returns" className="w-12 h-12 object-contain" />
+          <img src="/icon-2.png" alt="10 Days Returns" className="w-12 h-12 object-contain" />
           <div>
             <h4 className="font-bold text-gray-900 text-sm">10 Days Returns</h4>
             <p className="text-gray-500 text-xs">Moneyback Guarantee</p>
           </div>
         </div>
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-4">
-          <img src="/image/icon-3.png" alt="Offer & Gifts" className="w-12 h-12 object-contain" />
+          <img src="/icon-3.png" alt="Offer & Gifts" className="w-12 h-12 object-contain" />
           <div>
             <h4 className="font-bold text-gray-900 text-sm">Offer & Gifts</h4>
             <p className="text-gray-500 text-xs">On All Orders</p>
           </div>
         </div>
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-4">
-          <img src="/image/icon-4.png" alt="Secure Payments" className="w-12 h-12 object-contain" />
+          <img src="/icon-4.png" alt="Secure Payments" className="w-12 h-12 object-contain" />
           <div>
             <h4 className="font-bold text-gray-900 text-sm">Secure Payments</h4>
             <p className="text-gray-500 text-xs">Protected By Paypal</p>
@@ -77,19 +77,19 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-md border-4 border-pink-100 mb-4">
-              <img src="/image/HOME1.jpg" alt="Bright Bloom" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
+              <img src="/HOME1.jpg" alt="Bright Bloom" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
             </div>
             <h3 className="text-xl font-bold text-gray-800">Bright Bloom</h3>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-md border-4 border-pink-100 mb-4">
-              <img src="/image/HOME2.jpg" alt="Soft Petals" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
+              <img src="/HOME2.jpg" alt="Soft Petals" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
             </div>
             <h3 className="text-xl font-bold text-gray-800">Soft Petals</h3>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-md border-4 border-pink-100 mb-4">
-              <img src="/image/HOME3.jpg" alt="Fragrant Vases" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
+              <img src="/HOME3.jpg" alt="Fragrant Vases" className="w-full h-full object-cover hover:scale-105 transition duration-300" />
             </div>
             <h3 className="text-xl font-bold text-gray-800">Fragrant Vases</h3>
           </div>
@@ -116,7 +116,7 @@ function About() {
             <div className="p-3 bg-pink-50/50 rounded-3xl border-2 border-pink-100 shadow-xl overflow-hidden group">
               <div className="overflow-hidden rounded-2xl aspect-video bg-gray-900 shadow-inner">
                 <video 
-                  src="/image/video-about.MP4" 
+                  src="/video-about.MP4" 
                   controls 
                   autoPlay 
                   loop 
@@ -193,7 +193,7 @@ function About() {
             <div className="p-3 bg-pink-50/50 rounded-3xl border-2 border-pink-100 shadow-xl overflow-hidden group">
               <div className="overflow-hidden rounded-2xl aspect-video bg-gray-900 shadow-inner">
                 <video 
-                  src="/image/video-about2.MP4" 
+                  src="/video-about2.MP4" 
                   controls 
                   autoPlay 
                   loop 
@@ -777,7 +777,7 @@ function Review() {
       role: "Happy Customer",
       comment: "I Have Ordered Flowers From Many Places, But The Quality Here Is Exceptional. The Colors Were Vibrant, The Flowers Were Incredibly Fresh, And The Arrangement Felt Elegant And Natural.",
       rating: 5,
-      image: "/image/pic-1.jpg"
+      image: "/pic-1.jpg"
     },
     {
       id: 2,
@@ -785,7 +785,7 @@ function Review() {
       role: "Happy Customer",
       comment: "From The Moment The Flowers Arrived, I Could See The Attention To Detail And Care That Went Into Every Arrangement. The Blooms Were Fresh, Fragrant, And Absolutely Beautiful.",
       rating: 5,
-      image: "/image/pic-1.jpg"
+      image: "/pic-1.jpg"
     },
     {
       id: 3,
@@ -793,7 +793,7 @@ function Review() {
       role: "Happy Customer",
       comment: "The Flowers Were Absolutely Beautiful And Incredibly Fresh. Every Bloom Looked Vibrant And Carefully Selected, Creating An Arrangement That Brought Warmth And Elegance To The Room.",
       rating: 5,
-      image: "/image/pic-1.jpg"
+      image: "/pic-1.jpg"
     }
   ]);
 
@@ -811,7 +811,7 @@ function Review() {
       role: "Happy Customer",
       comment: formComment,
       rating: parseInt(formRating),
-      image: "/image/pic-1.jpg"
+      image: "/pic-1.jpg"
     };
 
     setReviews([newReview, ...reviews]);
@@ -956,7 +956,7 @@ function Contact() {
           <div className="space-y-8">
             <div className="overflow-hidden rounded-2xl shadow-md border-2 border-pink-100">
               <img 
-                src="/image/contact.jpg" 
+                src="/contact.jpg" 
                 alt="Contact LyLy Flower Shop" 
                 className="w-full h-80 object-cover hover:scale-105 transition duration-500"
               />

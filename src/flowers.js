@@ -5,7 +5,7 @@ export const flowers = [
     name: "Red Rose Romance",
     price: 45.00,
     category: "Roses",
-    image: "/image/img-01.jpg",
+    image: "/img-01.jpg",
     description: "A classic arrangement of fresh premium red roses."
   },
   {
@@ -13,7 +13,7 @@ export const flowers = [
     name: "Sunshine Sunflower",
     price: 35.00,
     category: "Sunflowers",
-    image: "/image/img-2.jpg",
+    image: "/img-2.jpg",
     description: "Bright and cheerful sunflowers to light up any room."
   },
   {
@@ -21,7 +21,7 @@ export const flowers = [
     name: "Pastel Spring Tulips",
     price: 40.00,
     category: "Tulips",
-    image: "/image/img-3.jpg",
+    image: "/img-3.jpg",
     description: "Fresh pastel-colored tulips straight from the garden."
   },
   {
@@ -29,7 +29,7 @@ export const flowers = [
     name: "Blushing Peony Dream",
     price: 55.00,
     category: "Peonies",
-    image: "/image/img-4.jpg",
+    image: "/img-4.jpg",
     description: "Soft pink peonies arranged delicately with seasonal greens."
   },
   {
@@ -37,7 +37,7 @@ export const flowers = [
     name: "Elegant White Lilies",
     price: 50.00,
     category: "Lilies",
-    image: "/image/img-5.jpg",
+    image: "/img-5.jpg",
     description: "Fragrant white lilies that symbolize grace and purity."
   },
   {
@@ -45,7 +45,7 @@ export const flowers = [
     name: "Purple Orchid Elegance",
     price: 60.00,
     category: "Orchids",
-    image: "/image/img-6.jpg",
+    image: "/img-6.jpg",
     description: "Exotic purple orchids styled in a sleek modern arrangement."
   },
   {
@@ -53,7 +53,7 @@ export const flowers = [
     name: "Wildflower Meadow Mix",
     price: 38.00,
     category: "Mixed",
-    image: "/image/img-7.jpg",
+    image: "/img-7.jpg",
     description: "A rustic, vibrant collection of wild meadow flowers."
   },
   {
@@ -61,7 +61,7 @@ export const flowers = [
     name: "Lavender Serenity",
     price: 30.00,
     category: "Lavender",
-    image: "/image/img-08.jpg",
+    image: "/img-08.jpg",
     description: "Soothing fresh-cut lavender bundles with a calming aroma."
   },
   {
@@ -69,7 +69,7 @@ export const flowers = [
     name: "Golden Daisy Bunch",
     price: 28.00,
     category: "Daisies",
-    image: "/image/img-9.jpg",
+    image: "/img-9.jpg",
     description: "Cheerful golden daisies guaranteed to bring a smile."
   },
   {
@@ -77,7 +77,7 @@ export const flowers = [
     name: "Royal Blue Hydrangea",
     price: 48.00,
     category: "Hydrangeas",
-    image: "/image/image-10.jpg",
+    image: "/image-10.jpg",
     description: "Rich and voluminous blue hydrangeas in a classic vase."
   },
   {
@@ -85,7 +85,7 @@ export const flowers = [
     name: "Carnation Celebration",
     price: 25.00,
     category: "Carnations",
-    image: "/image/image-11.jpg",
+    image: "/image-11.jpg",
     description: "Long-lasting mixed colorful carnations beautifully styled."
   },
   {
@@ -93,7 +93,7 @@ export const flowers = [
     name: "Sunset Blossom Special",
     price: 65.00,
     category: "Premium",
-    image: "/image/image-12.jpg",
+    image: "/image-12.jpg",
     description: "A luxurious arrangement featuring warm sunset-toned blooms."
   }
 ];
