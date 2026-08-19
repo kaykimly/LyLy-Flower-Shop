@@ -534,6 +534,7 @@ function Admin({ flowers, setFlowers }) {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("/image/HOME1.jpg");
+  const [successMessage, setSuccessMessage] = useState(false); // Added state for success banner
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -570,7 +571,10 @@ function Admin({ flowers, setFlowers }) {
     setPrice("");
     setDescription("");
     setImage("/image/HOME1.jpg");
-    alert("Product added successfully!");
+    
+    // Show nice success message box instead of alert popup
+    setSuccessMessage(true);
+    setTimeout(() => setSuccessMessage(false), 4000); // Auto hides after 4 seconds
   };
 
   const handleDelete = (id) => {
@@ -674,6 +678,15 @@ function Admin({ flowers, setFlowers }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-200">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Add New Product</h2>
+            
+            {/* Pretty Success Message Box */}
+            {successMessage && (
+              <div className="mb-6 p-4 bg-pink-50 border border-pink-200 text-pink-700 rounded-2xl flex items-center space-x-3 text-sm font-medium animate-fadeIn">
+                <span className="text-lg">✨</span>
+                <span>Success! Your new flower product has been added to the shop inventory.</span>
+              </div>
+            )}
+
             <form onSubmit={handleAddProduct} className="space-y-4">
               <div>
                 <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Flower Name</label>
@@ -800,6 +813,7 @@ function Review() {
   const [formName, setFormName] = useState("");
   const [formComment, setFormComment] = useState("");
   const [formRating, setFormRating] = useState("5");
+  const [submitted, setSubmitted] = useState(false); // Added state for success message
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -817,7 +831,7 @@ function Review() {
     setReviews([newReview, ...reviews]);
     setFormName("");
     setFormComment("");
-    alert("Thank you! Your review has been submitted successfully.");
+    setSubmitted(true); // Shows nice box instead of alert popup
   };
 
   const handleDelete = (id) => {
@@ -883,50 +897,63 @@ function Review() {
             <p className="text-gray-500 text-sm mt-1">We love hearing your feedback!</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <input 
-                type="text" 
-                placeholder="Your Name" 
-                value={formName}
-                onChange={(e) => setFormName(e.target.value)}
-                required
-                className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
-              />
-            </div>
-
-            <div>
-              <select 
-                value={formRating}
-                onChange={(e) => setFormRating(e.target.value)}
-                className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
+          {submitted ? (
+            <div className="bg-pink-50 border border-pink-200 text-pink-700 p-6 rounded-2xl text-center space-y-2">
+              <h3 className="font-bold text-lg">Thank You!</h3>
+              <p className="text-sm">Your review has been submitted successfully.</p>
+              <button 
+                onClick={() => setSubmitted(false)}
+                className="mt-4 bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-xl hover:bg-pink-600 transition"
               >
-                <option value="5">★★★★★ (5 Stars)</option>
-                <option value="4">★★★★☆ (4 Stars)</option>
-                <option value="3">★★★☆☆ (3 Stars)</option>
-                <option value="2">★★☆☆☆ (2 Stars)</option>
-                <option value="1">★☆☆☆☆ (1 Star)</option>
-              </select>
+                Submit Another Review
+              </button>
             </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <input 
+                  type="text" 
+                  placeholder="Your Name" 
+                  value={formName}
+                  onChange={(e) => setFormName(e.target.value)}
+                  required
+                  className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
+                />
+              </div>
 
-            <div>
-              <textarea 
-                rows="4"
-                placeholder="Write Your Review Comments Here..." 
-                value={formComment}
-                onChange={(e) => setFormComment(e.target.value)}
-                required
-                className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
-              />
-            </div>
+              <div>
+                <select 
+                  value={formRating}
+                  onChange={(e) => setFormRating(e.target.value)}
+                  className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
+                >
+                  <option value="5">★★★★★ (5 Stars)</option>
+                  <option value="4">★★★★☆ (4 Stars)</option>
+                  <option value="3">★★★☆☆ (3 Stars)</option>
+                  <option value="2">★★☆☆☆ (2 Stars)</option>
+                  <option value="1">★☆☆☆☆ (1 Star)</option>
+                </select>
+              </div>
 
-            <button 
-              type="submit"
-              className="w-full bg-gray-900 text-white font-semibold py-4 rounded-2xl hover:bg-pink-600 active:bg-pink-700 transition shadow-lg"
-            >
-              Submit Review
-            </button>
-          </form>
+              <div>
+                <textarea 
+                  rows="4"
+                  placeholder="Write Your Review Comments Here..." 
+                  value={formComment}
+                  onChange={(e) => setFormComment(e.target.value)}
+                  required
+                  className="w-full px-4 py-3.5 bg-white border border-pink-200 rounded-2xl text-gray-800 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-200 transition shadow-sm"
+                />
+              </div>
+
+              <button 
+                type="submit"
+                className="w-full bg-gray-900 text-white font-semibold py-4 rounded-2xl hover:bg-pink-600 active:bg-pink-700 transition shadow-lg"
+              >
+                Submit Review
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </div>
